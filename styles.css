@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    color: #3a3a3b;
+    font-family: 'Lato', Helvetica, sans-serif;
+
+}
+
+p {
+    color: #3a3a3b;
+    font-family: 'lato', Helvetica, sans-serif;
+
+}
+
+#top-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#main {
+
+
+    width: 60%;
+}
+
+#links a {
+    font-family: Helvetica, sans-serif;
+
+    color: #070052;
+    margin: .5rem 1rem 1rem 2rem;
+    padding: 1px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#links a:hover {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+
+}
+
+#title {
+    background-color: #1a05ff;
+    color: #eeeeee;
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-weight: bolder;
+    width: auto;
+    max-width: 30%;
+    border-radius: 15px;
+    cursor: pointer;
+    padding-left: 6px;
+}
+
+#about {
+    margin: 2rem 0rem;
+}
+
+#title h1 {
+    padding: 3px;
+    margin-right: 3rem;
+    color: #eeeeee;
+}
+
+h1 {
+    color: #1a1a1b
+}
+
+.grid-container svg {
+    fill: #030020;
+}
+
+.amin {
+    background-color: #1a05ff;
+    accent-color: #ff050f;
+    color: #eeeeee;
+    font-family: Helvetica, sans-serif;
+    width: 7rem;
+    padding: 6px 25px 6px 6px;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.bounce:hover {
+    animation-name: bounce;
+    animation-duration: 0.75s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(-10px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+.shake:hover {
+    animation-name: shake;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(-5px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+
+}
+
+#title:hover {
+    animation-name: split;
+    animation-duration: .5s;
+}
+
+#titleText:hover:after {
+    content: attr(data-hover);
+}
+
+.grow {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.grow:hover {
+    transform: scale(1.25);
+    z-index: 1;
+
+}
+
+
+
+#findMeOnline svg {
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+#findMeOnline {
+    font-weight: bolder;
+
+    color: #1a1a1b;
+    scale: 1.5;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#certifications {
+    font-weight: bolder;
+    color: #1a1a1b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/* Gallery styles */
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery-item {
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid #b1aaff;
+    box-shadow: 0 0 5px #030020;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+.caption {
+    text-align: center;
+    padding: 10px;
+    background-color: #e7e4ff;
+}
+
+/* Portfolio styles */
+#portfolio iframe {
+    margin: 20px
+}
+
+#sun {
+    visibility: hidden;
+    position: absolute;
+}
+
+#moon {
+    visibility: visible;
+    cursor: pointer;
+    position: relative;
+    margin-left: 2rem;
+
+
+}
+
+
+
+/* Blog post image */
+.blog-post img {
+    width: 100%;
+    height: auto;
+}
+
+/* Blog post content */
+.blog-content {
+    padding: 20px;
+}
+
+code {
+    background-color: #191818;
+    color: wheat;
+    padding: 5px;
+    margin: 6rem 0px;
+}
+
+/* Blog post timestamp */
+.timestamp {
+    color: #777;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* styles.css */
+
+
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* Adjust the number of columns as needed */
+    gap: 20px;
+    /* Adjust the gap between icons */
+    max-width: 800px;
+    /* Adjust the maximum width of the grid */
+    margin: 0;
+    padding: 20px;
+}
+
+.grid-item {
+    text-align: center;
+    width: 200px;
+}
+
+.grid-item img {
+    width: 100px;
+    /* Adjust the icon size as needed */
+    height: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+    #main {
+
+
+        width: 85%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative
+    }
+
+    #title h1 {
+        color: #eeeeee;
+        padding: 1rem;
+    }
+
+    body {
+        background-color: #eeeeee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #3a3a3b;
+        font-family: 'Lato', Helvetica, sans-serif;
+
+    }
+
+    #title {
+        background-color: #eeeeee;
+        color: #1a05ff;
+        font-family: 'Lato', Helvetica, sans-serif;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+
+    #title h1 {
+        color: #1a05ff;
+
+    }
+
+    #about h1 {
+        text-align: start;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* Adjust the number of columns as needed */
+        /* Adjust the gap between icons */
+        /* Adjust the maximum width of the grid */
+        margin: 2rem 0rem;
+    }
+
+    .grid-item {
+        text-align: center;
+        width: 70px;
+    }
+
+    .grid-item img {
+        width: 100px;
+        /* Adjust the icon size as needed */
+        height: 100px;
+    }
+
+    .amin {
+        background-color: #1a05ff;
+        accent-color: #ff050f;
+        color: #eeeeee;
+        font-family: Helvetica, sans-serif;
+        width: 5rem;
+        margin-right: 3px;
+        padding: 6px 25px 6px 6px;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 9px;
+    }
+
+    #findMeOnline {
+        font-weight: bolder;
+        scale: 0.98;
+        color: #1a1a1b;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #portfolio iframe {
+        margin: 15px 0px;
+    }
+
+    #blog p {
+        text-align: center;
+    }
+
+    #links {
+        visibility: hidden;
+    }
+}

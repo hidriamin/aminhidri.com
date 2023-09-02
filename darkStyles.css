@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+
+body {
+    background-color: rgb(12, 10, 17);
+    display: flex;
+    justify-content: center;
+    color: #dadada;
+    font-family: Helvetica, sans-serif;
+
+}
+
+p {
+    font-weight: 500;
+    color: rgb(215, 215, 215);
+}
+
+#top-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#main {
+
+
+    width: 60%;
+}
+
+#links a {
+    font-family: Helvetica, sans-serif;
+
+    color: #bba6dd;
+    margin: .5rem 1rem 1rem 2rem;
+    padding: 1px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#title {
+    background-color: #2f2fd3;
+    color-scheme: #ff050f;
+    color: white;
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-weight: bolder;
+    width: auto;
+    max-width: 30%;
+    border-radius: 15px;
+}
+
+#about {
+    margin: 2rem 0rem;
+}
+
+#title h1 {
+    padding: 3px;
+    margin-right: 3rem;
+}
+
+.amin {
+    background-color: #2f2fd3;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    width: 7rem;
+    padding: 6px 25px 6px 6px;
+    border-radius: 8px;
+}
+
+/* Gallery styles */
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.caption {
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+/* Portfolio styles */
+
+#sun {
+    visibility: visible;
+    position: relative;
+}
+
+#moon {
+
+    visibility: hidden;
+    position: absolute;
+
+}
+
+svg {
+    margin-left: 2rem;
+
+}
+
+/* Blog post image */
+.blog-post img {
+    width: 100%;
+    height: auto;
+}
+
+/* Blog post content */
+.blog-content {
+    padding: 20px;
+}
+
+code {
+    background-color: #191818;
+    color: wheat;
+    padding: 5px;
+    margin: 6rem 0px;
+}
+
+/* Blog post timestamp */
+.timestamp {
+    color: #777;
+    font-size: 14px;
+    margin-top: 10px;
+}
