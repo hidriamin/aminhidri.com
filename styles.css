@@ -3,6 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Handlee&family=Sacramento&family=Satisfy&display=swap');
 
+html {
+    scroll-behavior: smooth;
+
+}
+
 #title {
     color: black;
     font-family: 'Satisfy', cursive;
@@ -13,7 +18,7 @@
 
 }
 
-#Oldtitle {
+.Oldtitle {
     background-color: #1a05ff;
     color: #eeeeee;
     font-family: 'Satisfy', cursive;
@@ -37,7 +42,7 @@ body {
 }
 
 p {
-    color: #3a3a3b;
+    color: #191818;
     font-family: 'lato', Helvetica, sans-serif;
 
 }
@@ -53,12 +58,11 @@ p {
 
 
 #links a {
-    font-family: "Lato", sans-serif;
-    color: #101010;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    color: #191818;
     margin: .5rem 1rem 0rem 2rem;
-    padding: 1px;
     border-radius: 5px;
-    font-weight: normal;
     text-decoration: none;
 }
 
@@ -67,11 +71,8 @@ p {
     transition: 0.5s;
 }
 
-#about h1,
-#about p,
-#about .grid-container {
-    margin-left: 2rem;
-}
+
+
 
 #about {
     display: flex;
@@ -91,12 +92,12 @@ p {
 }
 
 h1 {
-    color: #1a1a1b;
+    color: #191818;
     font-family: "Satisfy";
 }
 
 .grid-container svg {
-    fill: #030020;
+    fill: #191818;
 }
 
 .amin {
@@ -139,6 +140,7 @@ h1 {
 }
 
 .shake:hover {
+    cursor: pointer;
     animation-name: shake;
     animation-duration: .5s;
     animation-iteration-count: infinite;
@@ -194,13 +196,30 @@ h1 {
 
 #certifications {
     font-weight: bolder;
-    color: #1a1a1b;
+    color: #191818;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+#contact-me-parts {
+    display: flex;
+    flex-direction: row;
+}
+
+#certifications-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#certifications-items img {
+    margin: 2rem;
+    width: 40vw;
+    height: 60vh;
+}
 
 
 
@@ -208,14 +227,24 @@ h1 {
 /* Gallery styles */
 
 
+#gallery h1 {
+    color: #e2e2e2;
+    text-align: center;
+}
+
+#gallery {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(12, 10, 17);
+
+}
 
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 10px;
-    padding: 20px;
-    background-color: #030020;
-
+    padding: 0px 20px 20px 20px;
+    background-color: rgb(12, 10, 17);
 
 }
 
@@ -224,7 +253,7 @@ h1 {
     overflow: hidden;
     border: 1px solid #c7c7c7;
     box-shadow: 0 0 5px #030020;
-    background-color: #ebebeb;
+    background-color: rgb(12, 10, 17);
 
 }
 
@@ -239,7 +268,10 @@ h1 {
 .caption {
     text-align: center;
     padding: 10px;
-    background-color: #ebebeb;
+    background-color: rgb(12, 10, 17);
+    color: #eeeeee;
+
+
 }
 
 /* Portfolio styles */
@@ -250,14 +282,55 @@ h1 {
     flex-direction: column;
 }
 
+#portfolio {
+    background-color: rgb(12, 10, 17);
+}
+
+#portfolio h1,
+#portfolio p {
+    color: #eeeeee
+}
+
+#portfolio-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
 #portfolio iframe {
-    margin: 20px 0px;
-    width: 60%;
+    margin: 20px 20px;
+    width: 40%;
+}
+
+
+#top-section p {
+    text-align: center;
+    color: red;
+    font-size: small;
+}
+
+
+.rotate {
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
 }
 
 #sun {
     visibility: hidden;
     position: absolute;
+
+
 }
 
 #moon {
@@ -268,34 +341,11 @@ h1 {
     margin-right: 2rem;
 
 
+
 }
 
 
 
-/* Blog post image */
-.blog-post img {
-    width: 100%;
-    height: auto;
-}
-
-/* Blog post content */
-.blog-content {
-    padding: 20px;
-}
-
-code {
-    background-color: #191818;
-    color: wheat;
-    padding: 5px;
-    margin: 6rem 0px;
-}
-
-/* Blog post timestamp */
-.timestamp {
-    color: #777;
-    font-size: 14px;
-    margin-top: 10px;
-}
 
 /* styles.css */
 
@@ -317,6 +367,8 @@ code {
     text-align: center;
     width: 200px;
 }
+
+
 
 .grid-item img {
     width: 100px;
@@ -368,13 +420,15 @@ textarea {
     border-radius: 4px;
 }
 
-#contact h1 {
+#contact h1,
+#contact p {
     color: #eeeeee;
 
 }
 
 #contact {
-    background-color: #030020;
+    background-color: rgb(12, 10, 17);
+    color: #eeeeee;
 
     display: flex;
     align-items: center;
@@ -382,7 +436,7 @@ textarea {
 }
 
 #contact button[type="submit"] {
-    background-color: #7c70ff;
+    background-color: #ff4545;
     font-family: "Lato";
     color: #eeeeee;
     border: none;
@@ -394,11 +448,11 @@ textarea {
 }
 
 #contact button[type="submit"]:hover {
-    background-color: #4635ff;
+    background-color: #ff272e;
 }
 
 #findMeOnline svg {
-    fill: #1a1a1b;
+    fill: #191818;
 }
 
 footer {
@@ -407,19 +461,84 @@ footer {
 
 footer p {
     padding: 1rem;
-    color: #101010;
+    color: #191818;
 
 }
 
 @media only screen and (max-width: 768px) {
-    #main {
+    #contact-me-parts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
 
-        width: 85%;
+    #sun {
+        visibility: hidden;
+        position: absolute;
+
+
+    }
+
+    #moon {
+        visibility: visible;
+        cursor: pointer;
+        position: relative;
+        margin-left: 0rem;
+        margin-right: 2rem;
+
+
+
+    }
+
+    .container {
+        width: 80vw;
+    }
+
+    #contact p {
+        margin: 1rem 2rem;
+    }
+
+    #contact {
+        background-color: rgb(12, 10, 17);
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    #top-section p {
+        text-align: center;
+        color: #eeeeee;
+    }
+
+    #top-section {
+        margin: 0rem 2rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+
+    #certifications-items img {
+        margin: 1rem 2rem;
+        width: 80vw;
+        height: 40vh;
     }
 
     h1 {
         text-align: center;
+    }
+
+    p {
+        color: #191818;
+        font-family: 'lato', Helvetica, sans-serif;
+
     }
 
     html,
@@ -427,17 +546,33 @@ footer p {
         overflow-x: hidden;
     }
 
-    body {
-        position: relative
+
+    .highlight {
+        background-color: #eeeeee;
+        color: #191818;
+        font-family: "Lato", sans-serif;
+        font-weight: bold;
+        padding: 0px 0px 0px 0px;
+        border-radius: 0px;
+        cursor: pointer;
+
     }
 
     #title h1 {
-        color: #eeeeee;
         padding: 1rem;
     }
 
+    #title {
+        color: black;
+        font-family: 'Satisfy', cursive;
+        cursor: pointer;
+        font-size: medium;
+        margin-right: 0rem;
+        margin-left: 0rem;
+
+    }
+
     body {
-        background-color: #eeeeee;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -447,60 +582,67 @@ footer p {
     }
 
     #title {
-        background-color: #eeeeee;
-        color: #1a05ff;
+
         font-family: 'Lato', Helvetica, sans-serif;
         font-weight: bolder;
         cursor: pointer;
     }
 
-    #title h1 {
-        color: #1a05ff;
 
+
+
+    #about {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-direction: column;
+        margin: 0rem 2rem;
+        text-align: center;
     }
 
     #about h1 {
-        text-align: start;
+        text-align: center;
     }
 
     .grid-container {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        /* Adjust the number of columns as needed */
+        justify-content: center;
         /* Adjust the gap between icons */
+        max-width: 100vw;
         /* Adjust the maximum width of the grid */
-        margin: 2rem 0rem;
+        margin: 0rem 0rem;
+        padding: 30px;
     }
 
     .grid-item {
         text-align: center;
-        width: 70px;
+        width: 33vw;
     }
+
+
 
     .grid-item img {
-        width: 100px;
+        width: 10px;
         /* Adjust the icon size as needed */
-        height: 100px;
+        height: 10px;
     }
 
+
     .amin {
-        background-color: #1a05ff;
+
         accent-color: #ff050f;
-        color: #eeeeee;
-        font-family: Helvetica, sans-serif;
-        width: 5rem;
-        margin-right: 3px;
-        padding: 6px 25px 6px 6px;
-        border-radius: 8px;
+        color: #1a05ff;
+        font-family: "Lato", sans-serif;
         cursor: pointer;
-        margin-top: 9px;
+
+
     }
 
     #findMeOnline {
         font-weight: bolder;
         scale: 0.98;
-        color: #1a1a1b;
         margin-top: 1rem;
         display: flex;
         flex-direction: row;
@@ -509,8 +651,17 @@ footer p {
         margin-right: auto;
     }
 
+    #portfolio-items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
     #portfolio iframe {
-        margin: 15px 0px;
+        margin: 20px 20px;
+        width: 80%;
     }
 
     #blog p {

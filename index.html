@@ -8,6 +8,7 @@
 </head>
 
 <body>
+
     <div id="top-section">
         <div id="title">
             <h1 id="titleText" data-hover="😊">Amin Hidri</h1>
@@ -16,10 +17,10 @@
             <a href="#about">About</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#blog">Blog</a>
-            <a href="#contact">Contact</a>
+            <a href="#contact">Contact Me</a>
 
         </div>
-        <p style="color:red; text-align:right; font-size: small;">SITE UNFINISHED</p>
+        <p>SITE UNFINISHED</p>
 
         <div id="modeButton">
             <svg id="moon" onclick="mode()" xmlns="http://www.w3.org/2000/svg" height="1em"
@@ -52,7 +53,7 @@
                 Development.</span> </p>
         </p>
         <p>Throughout my journey, i learned about multiple technologies including:</p>
-        <div class="grid-container" id="javascript">
+        <div class="grid-container">
             <div class="grid-item">
                 <svg xmlns="http://www.w3.org/2000/svg" height="3em"
                     viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -123,50 +124,57 @@
             </div>
 
         </div>
-        <div class="gallery">
-            <div class="gallery-item grow">
-                <img src="./images/Photo_De_Profil.jpg" alt="Me, in July 2023">
-                <div class="caption">Me at my university, July 2023.</div>
-            </div>
-            <!-- <div class="gallery-item">
+        <div id="gallery">
+            <h1>Photos Gallery:</h1>
+
+            <div class="gallery">
+                <div class="gallery-item grow">
+                    <img src="./images/Photo_De_Profil.jpg" alt="Me, in July 2023">
+                    <div class="caption">Me at my university, July 2023.</div>
+                </div>
+                <!-- <div class="gallery-item">
                     <img src="./images/Younger me.png" alt="Younger me.">
                     <div class="caption">Younger me in front of the computer. I've had interest in technology in some
                         way or another since a younger age.</div>
                 </div>-->
 
-            <div class="gallery-item grow">
-                <img src="./images/graduation.jpg" alt="Me, late 2021.">
-                <div class="caption">29th of may 2023, the day i validated my defense.</div>
+                <div class="gallery-item grow">
+                    <img src="./images/graduation.jpg" alt="Me, late 2021.">
+                    <div class="caption">29th of may 2023, the day i validated my defense.</div>
+                </div>
             </div>
         </div>
 
         <div id="certifications">
-            <h3>Certifications:</h3>
+            <h1>Certifications:</h1>
             <p>Click on any certification to verify it!</p>
-            <a href="https://www.freecodecamp.org/certification/HIDRIAmin/responsive-web-design" target="_blank">
-                <img src="./images/Certificates/Responsive Web Design - FreeCodeCamp.PNG" width="60%"
-                    style=" display: block; margin-left: auto; margin-right: auto;"
-                    title="FCC Responsive Web Design"></a>
-            <a href="https://www.freecodecamp.org/certification/HIDRIAmin/javascript-algorithms-and-data-structures"
-                target="_blank"> <img
-                    src="./images/Certificates/JavaScript Algorithms and Data Structures - FreeCodeCamp.png" width="60%"
-                    style=" display: block; margin-left: auto; margin-right: auto;"
-                    title="FCC JS Algorithms and Data Structures"></a>
-            <a href="https://www.udemy.com/certificate/UC-a5bddf7b-689b-4421-ad79-5338e9a36450/" target="_blank"><img
-                    src="./images/Certificates/Automate the Boring Stuff with Python Programming.jpg" width="60%"
-                    style=" display: block; margin-left: auto; margin-right: auto;"
-                    title="Automate the boring stuff with Python Programming"></a>
+            <div id="certifications-items">
+                <a href="https://www.freecodecamp.org/certification/HIDRIAmin/responsive-web-design" target="_blank">
+                    <img src="./images/Certificates/Responsive Web Design - FreeCodeCamp.PNG"
+                        title="FCC Responsive Web Design"></a>
+                <a href="https://www.freecodecamp.org/certification/HIDRIAmin/javascript-algorithms-and-data-structures"
+                    target="_blank"> <img
+                        src="./images/Certificates/JavaScript Algorithms and Data Structures - FreeCodeCamp.png"
+                        title="FCC JS Algorithms and Data Structures"></a>
+                <a href="https://www.udemy.com/certificate/UC-a5bddf7b-689b-4421-ad79-5338e9a36450/"
+                    target="_blank"><img
+                        src="./images/Certificates/Automate the Boring Stuff with Python Programming.jpg"
+                        title="Automate the boring stuff with Python Programming"></a>
+            </div>
         </div>
-
     </div>
     <div id="portfolio">
         <h1>Portfolio👷‍♂️</h1>
-        <iframe src="https://hidriamin.github.io/Flask-Toolbox/" width="100%" height="350"
-            title="Flask Toolbox"></iframe>
-        <iframe src="https://hidriamin.github.io/priceCards/" width="100%" height="350"
-            title="CSS Price Cards"></iframe>
-        <iframe src="https://hidriamin.github.io/basicEcommerce/" width="100%" height="350"
-            title="Basic Ecommerce"></iframe>
+        <div id="portfolio-items">
+            <iframe src="https://hidriamin.github.io/Flask-Toolbox/" width="100%" height="350"
+                title="Flask Toolbox"></iframe>
+            <iframe src="https://hidriamin.github.io/priceCards/" width="100%" height="350"
+                title="CSS Price Cards"></iframe>
+            <iframe src="https://hidriamin.github.io/basicEcommerce/" width="100%" height="350"
+                title="Basic Ecommerce"></iframe>
+            <iframe src="https://hidriamin.github.io/aminhidri.com/" width="100%" height="350"
+                title="Basic Ecommerce"></iframe>
+        </div>
 
 
 
@@ -177,23 +185,27 @@
     </div>
     <div id="contact">
         <h1>Contact me</h1>
-
-        <div class="container">
-            <form id="contact-form">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                </div>
-                <button type="submit">Submit</button>
-            </form>
+        <div id="contact-me-parts">
+            <div class="container">
+                <form id="contact-form" action="mailto:aminehidri44@gmail.com">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <p>If you're on PC, clicking send will open your Email program to send me an email.</br>
+                If you don't want to use this form, you can send me an Email at aminehidri44@gmail.com
+            </p>
         </div>
     </div>
     <footer>

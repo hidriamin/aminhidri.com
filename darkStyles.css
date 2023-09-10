@@ -3,6 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Handlee&family=Sacramento&family=Satisfy&display=swap');
 
+html {
+    scroll-behavior: smooth;
+
+}
+
 #title {
     color: black;
     font-family: 'Satisfy', cursive;
@@ -13,7 +18,7 @@
 
 }
 
-#Oldtitle {
+.Oldtitle {
     background-color: #1a05ff;
     color: #eeeeee;
     font-family: 'Satisfy', cursive;
@@ -54,6 +59,7 @@ p {
 
 #links a {
     font-family: 'Lato', sans-serif;
+    font-weight: 500;
     color: #eeeeee;
     margin: .5rem 1rem 0rem 2rem;
     border-radius: 5px;
@@ -65,11 +71,8 @@ p {
     transition: 0.5s;
 }
 
-#about h1,
-#about p,
-#about .grid-container {
-    margin-left: 2rem;
-}
+
+
 
 #about {
     display: flex;
@@ -137,6 +140,7 @@ h1 {
 }
 
 .shake:hover {
+    cursor: pointer;
     animation-name: shake;
     animation-duration: .5s;
     animation-iteration-count: infinite;
@@ -199,6 +203,23 @@ h1 {
     align-items: center;
 }
 
+#contact-me-parts {
+    display: flex;
+    flex-direction: row;
+}
+
+#certifications-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#certifications-items img {
+    margin: 2rem;
+    width: 40vw;
+    height: 60vh;
+}
 
 
 
@@ -206,14 +227,24 @@ h1 {
 /* Gallery styles */
 
 
+#gallery h1 {
+    color: #191818;
+    text-align: center;
+}
+
+#gallery {
+    display: flex;
+    flex-direction: column;
+    background-color: #e2e2e2;
+
+}
 
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 10px;
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
     background-color: #e2e2e2;
-
 
 }
 
@@ -222,7 +253,7 @@ h1 {
     overflow: hidden;
     border: 1px solid #c7c7c7;
     box-shadow: 0 0 5px #030020;
-    background-color: #ebebeb;
+    background-color: #e2e2e2;
 
 }
 
@@ -237,7 +268,9 @@ h1 {
 .caption {
     text-align: center;
     padding: 10px;
-    background-color: rgb(12, 10, 17);
+    background-color: #e2e2e2;
+    color: rgb(12, 10, 17);
+
 
 }
 
@@ -249,9 +282,39 @@ h1 {
     flex-direction: column;
 }
 
+#portfolio-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
 #portfolio iframe {
-    margin: 20px 0px;
-    width: 60%;
+    margin: 20px 20px;
+    width: 40%;
+}
+
+
+#top-section p {
+    text-align: center;
+    color: red;
+    font-size: small;
+}
+
+
+.rotate {
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
 }
 
 #sun {
@@ -273,30 +336,6 @@ h1 {
 
 
 
-/* Blog post image */
-.blog-post img {
-    width: 100%;
-    height: auto;
-}
-
-/* Blog post content */
-.blog-content {
-    padding: 20px;
-}
-
-code {
-    background-color: #191818;
-    color: wheat;
-    padding: 5px;
-    margin: 6rem 0px;
-}
-
-/* Blog post timestamp */
-.timestamp {
-    color: #777;
-    font-size: 14px;
-    margin-top: 10px;
-}
 
 /* styles.css */
 
@@ -416,14 +455,68 @@ footer p {
 }
 
 @media only screen and (max-width: 768px) {
-    #main {
+    #contact-me-parts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #sun {
+        visibility: visible;
+        cursor: pointer;
+        position: relative;
+        margin-left: 0rem;
+        margin-right: 2rem;
+
+    }
+
+    #moon {
+        visibility: hidden;
+        position: absolute;
+
+    }
+
+    #contact {
+        background-color: rgb(12, 10, 17);
 
 
-        width: 85%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 80vw;
+    }
+
+    #top-section p {
+        text-align: center;
+        color: rgb(12, 10, 17);
+    }
+
+    #top-section {
+        margin: 0rem 2rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+
+    #certifications-items img {
+        margin: 1rem 2rem;
+        width: 80vw;
+        height: 40vh;
     }
 
     h1 {
         text-align: center;
+    }
+
+    p {
+        color: #eeeeee;
+        font-family: 'lato', Helvetica, sans-serif;
+
     }
 
     html,
@@ -431,17 +524,23 @@ footer p {
         overflow-x: hidden;
     }
 
-    body {
-        position: relative
+
+    .highlight {
+        background-color: rgb(12, 10, 17);
+        color: #eeeeee;
+        font-family: "Lato", sans-serif;
+        font-weight: bold;
+        padding: 0px 0px 0px 0px;
+        border-radius: 0px;
+        cursor: pointer;
+
     }
 
     #title h1 {
-        color: #eeeeee;
         padding: 1rem;
     }
 
     body {
-        background-color: #eeeeee;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -451,60 +550,67 @@ footer p {
     }
 
     #title {
-        background-color: #eeeeee;
-        color: #1a05ff;
+
         font-family: 'Lato', Helvetica, sans-serif;
         font-weight: bolder;
         cursor: pointer;
     }
 
-    #title h1 {
-        color: #1a05ff;
 
+
+
+    #about {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-direction: column;
+        margin: 0rem 2rem;
+        text-align: center;
     }
 
     #about h1 {
-        text-align: start;
+        text-align: center;
     }
 
     .grid-container {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        /* Adjust the number of columns as needed */
+        justify-content: center;
         /* Adjust the gap between icons */
+        max-width: 100vw;
         /* Adjust the maximum width of the grid */
-        margin: 2rem 0rem;
+        margin: 0rem 0rem;
+        padding: 30px;
     }
 
     .grid-item {
         text-align: center;
-        width: 70px;
+        width: 33vw;
     }
+
+
 
     .grid-item img {
-        width: 100px;
+        width: 10px;
         /* Adjust the icon size as needed */
-        height: 100px;
+        height: 10px;
     }
 
+
     .amin {
-        background-color: #1a05ff;
+
         accent-color: #ff050f;
         color: #eeeeee;
-        font-family: Helvetica, sans-serif;
-        width: 5rem;
-        margin-right: 3px;
-        padding: 6px 25px 6px 6px;
-        border-radius: 8px;
+        font-family: "Lato", sans-serif;
         cursor: pointer;
-        margin-top: 9px;
+
+
     }
 
     #findMeOnline {
         font-weight: bolder;
         scale: 0.98;
-        color: #1a1a1b;
         margin-top: 1rem;
         display: flex;
         flex-direction: row;
@@ -513,8 +619,17 @@ footer p {
         margin-right: auto;
     }
 
+    #portfolio-items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
     #portfolio iframe {
-        margin: 15px 0px;
+        margin: 20px 20px;
+        width: 80%;
     }
 
     #blog p {
