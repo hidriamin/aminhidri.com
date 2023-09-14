@@ -13,9 +13,7 @@ html {
     font-family: 'Satisfy', cursive;
     cursor: pointer;
     font-size: medium;
-    margin-right: 2rem;
-    margin-left: 2rem;
-
+    margin: 0 2rem 0 2rem;
 }
 
 .Oldtitle {
@@ -51,7 +49,7 @@ p {
     display: flex;
     flex-direction: row;
     align-items: center;
-
+    height: 20vh;
     justify-content: space-between;
 }
 
@@ -61,7 +59,7 @@ p {
     font-family: 'Lato', sans-serif;
     font-weight: 500;
     color: #eeeeee;
-    margin: .5rem 1rem 0rem 2rem;
+    padding: .5rem 1rem 0rem 2rem;
     border-radius: 5px;
     text-decoration: none;
 }
@@ -77,7 +75,6 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    scale: 0.9;
 }
 
 #about {
@@ -85,6 +82,7 @@ p {
     align-items: center;
     justify-items: center;
     flex-direction: column;
+    line-height: 25px;
 
 }
 
@@ -93,17 +91,19 @@ p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 2rem;
+    height: 80vh;
 
 }
 
-#introduction {
-    margin-right: 8rem;
-    margin-bottom: 4rem;
+#introduction,
+.column {
+    width: 50vw;
+    margin: 20vh 0 20vh 0;
+
 }
 
 #introduction h1 {
-    font-size: 1.2cm;
+    font-size: 1.5cm;
 
 }
 
@@ -136,7 +136,7 @@ h1 {
 
 .highlight {
     color: #ff272e;
-
+    cursor: pointer;
 }
 
 .highlightOld {
@@ -212,16 +212,14 @@ h1 {
 
 
 
-#findMeOnline svg {
-    margin-top: 8px;
-    margin-left: 5px;
-}
+
 
 #findMeOnline {
 
     display: flex;
     flex-direction: row;
     justify-content: left;
+    align-items: center;
 
 }
 
@@ -455,6 +453,22 @@ textarea {
     flex-direction: column;
 }
 
+button {
+    background-color: #ff4545;
+    font-family: "Lato", Helvetica;
+    color: #eeeeee;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff272e;
+}
+
 #contact button[type="submit"] {
     background-color: #ff4545;
     font-family: "Lato";
@@ -471,9 +485,7 @@ textarea {
     background-color: #ff272e;
 }
 
-#findMeOnline svg {
-    fill: #eeeeee;
-}
+
 
 footer {
     margin: 0rem 0rem 0rem 0rem;
