@@ -13,7 +13,7 @@ html {
     font-family: 'Satisfy', cursive;
     cursor: pointer;
     font-size: medium;
-    margin: 0 2rem 0 2rem;
+    padding: 0 2rem 0 2rem;
 }
 
 .Oldtitle {
@@ -98,8 +98,8 @@ p {
 #introduction,
 .column {
     width: 50vw;
-    margin: 20vh 0 20vh 0;
-
+    padding: 20vh 0 20vh 0;
+    background-color: red;
 }
 
 #introduction h1 {
@@ -235,6 +235,8 @@ h1 {
 #contact-me-parts {
     display: flex;
     flex-direction: row;
+    gap: 1rem;
+
 }
 
 #certifications-items {
@@ -245,7 +247,7 @@ h1 {
 }
 
 #certifications-items img {
-    margin: 2rem;
+    padding: 1rem;
     width: 40vw;
     height: 60vh;
 }
@@ -317,11 +319,11 @@ h1 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
 }
 
 #portfolio iframe {
-    margin: 20px 20px;
-    width: 40%;
+    width: 40vw;
 }
 
 
@@ -350,8 +352,8 @@ h1 {
     visibility: visible;
     cursor: pointer;
     position: relative;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 
 }
 
@@ -405,7 +407,6 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     max-width: 400px;
     width: 100%;
-    margin: 1rem;
 }
 
 #main {
@@ -420,13 +421,13 @@ h1 {
 
 
 .form-group {
-    margin-bottom: 15px;
+    padding-bottom: 15px;
 }
 
 .container label {
     display: block;
     font-weight: bold;
-    margin-bottom: 5px;
+    padding-bottom: 5px;
 }
 
 input[type="text"],
@@ -446,7 +447,6 @@ textarea {
 
 #contact {
     background-color: rgb(12, 10, 17);
-
 
     display: flex;
     align-items: center;
@@ -488,7 +488,7 @@ button:hover {
 
 
 footer {
-    margin: 0rem 0rem 0rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
 }
 
 footer p {
@@ -509,8 +509,8 @@ footer p {
         visibility: visible;
         cursor: pointer;
         position: relative;
-        margin-left: 0rem;
-        margin-right: 2rem;
+        padding-left: 0rem;
+        padding-right: 2rem;
 
     }
 
@@ -536,7 +536,7 @@ footer p {
     }
 
     #top-section {
-        margin: 0rem 2rem;
+        padding: 0rem 2rem;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -547,7 +547,7 @@ footer p {
 
 
     #certifications-items img {
-        margin: 1rem 2rem;
+        padding: 1rem 2rem;
         width: 80vw;
         height: 40vh;
     }
@@ -607,7 +607,7 @@ footer p {
         align-items: center;
         justify-items: center;
         flex-direction: column;
-        margin: 0rem 2rem;
+        padding: 0rem 2rem;
         text-align: center;
     }
 
@@ -623,7 +623,7 @@ footer p {
         /* Adjust the gap between icons */
         max-width: 100vw;
         /* Adjust the maximum width of the grid */
-        margin: 0rem 0rem;
+        padding: 0rem 0rem;
         padding: 30px;
     }
 
@@ -654,12 +654,12 @@ footer p {
     #findMeOnline {
         font-weight: bolder;
         scale: 0.98;
-        margin-top: 1rem;
+        padding-top: 1rem;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
+        padding-left: auto;
+        padding-right: auto;
     }
 
     #portfolio-items {
@@ -668,10 +668,10 @@ footer p {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        gap: 20px 20px;
     }
 
     #portfolio iframe {
-        margin: 20px 20px;
         width: 80%;
     }
 
