@@ -52,7 +52,7 @@ p {
     font-family: 'Lato', sans-serif;
     font-weight: 800;
     color: #eeeeee;
-    padding: 0rem 1rem 0rem 2rem;
+    padding: 0rem 2rem 0rem 2rem;
     border-radius: 5px;
     text-decoration: none;
 }
@@ -76,26 +76,24 @@ p {
 #about {
     display: flex;
     align-items: center;
-    justify-items: center;
+
     flex-direction: column;
+    gap: 2rem;
+
 }
 
 
 
 #introduction {
     font-size: 30px;
-
     display: flex;
-    flex-direction: row;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px 20px;
     max-width: 1040px;
 }
 
 
 #introduction h1 {
+
     font-size: 84px;
 
 }
@@ -377,6 +375,10 @@ h1 {
     color: #030020;
 }
 
+#findMeOnline {
+    margin: 0px;
+    padding: 0px;
+}
 
 .form-group {
     padding-bottom: 15px;
@@ -415,6 +417,7 @@ button {
     background-color: #ff4545;
     font-family: "Lato", Helvetica;
     color: #eeeeee;
+    margin: 0px 0px;
     border: none;
     border-radius: 6px;
     padding: 8px 8px;
@@ -463,6 +466,25 @@ footer p {
         text-align: center;
     }
 
+    #introduction {
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 1040px;
+    }
+
+
+    #introduction h1 {
+
+        font-size: 30px;
+
+    }
+
+    #introduction-h-2 {
+        max-width: none;
+    }
+
     #sun {
         visibility: visible;
         cursor: pointer;
@@ -490,17 +512,16 @@ footer p {
 
     #top-section p {
         text-align: center;
-        color: rgb(12, 10, 17);
+        color: #eeeeee;
     }
 
     #top-section {
-        padding: 0rem 2rem;
+        margin: 0rem 0rem;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        text-align: center;
-
+        color: #eeeeee;
     }
 
 
@@ -537,9 +558,7 @@ footer p {
 
     }
 
-    #title h1 {
-        padding: 1rem;
-    }
+
 
     body {
         display: flex;
@@ -551,10 +570,11 @@ footer p {
     }
 
     #title {
-
-        font-family: 'Lato', Helvetica, sans-serif;
-        font-weight: bolder;
+        color: #eeeeee;
+        font-family: 'Satisfy', cursive;
         cursor: pointer;
+        font-size: 25px;
+        padding: 1rem;
     }
 
 
@@ -637,7 +657,18 @@ footer p {
         text-align: center;
     }
 
+
     #links {
-        visibility: hidden;
+        display: none;
+
+    }
+
+    #links a {
+        font-family: 'Lato', sans-serif;
+        font-weight: 800;
+        color: #eeeeee;
+        padding: 0rem 2rem 0rem 2rem;
+        border-radius: 5px;
+        text-decoration: none;
     }
 }
